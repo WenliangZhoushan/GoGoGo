@@ -1,6 +1,8 @@
 package main
 
 import (
+	// "fmt"
+	// "net/http"
 	"github.com/gin-gonic/gin"
 )
 
@@ -11,6 +13,17 @@ func sayHello(c *gin.Context) {
 }
 
 func main() {
+	/*
+	// example use pure html 
+	http.HandleFunc("/", doGreet)
+	err := http.ListenAndServe(":8080", nil)
+	if err != nil {
+		fmt.Println("HTTP server failed, err:%v", err)
+		return
+	}
+	return
+	*/
+
 	// return default route engine
 	r := gin.Default()
 
